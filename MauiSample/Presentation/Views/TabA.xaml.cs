@@ -4,16 +4,13 @@ using Sharpnado.TaskLoaderView;
 
 namespace MauiSample.Presentation.Views;
 
-public partial class TabA : ContentView
+public partial class TabA : OrientationContentView
 {
     public TabA()
     {
         InitializeComponent();
-        //TabHostBadge.SelectedIndex = 0;
-        //TabHostButton.SelectedIndex = 0;
-
-        //TabButton.TapCommand = new TaskLoaderCommand(TakeScreenshot);
-
+        PortraitView = PortraitStackLayout;
+        LandscapeView = LandscapeStackLayout;
     }
 
     private async Task TakeScreenshot()
