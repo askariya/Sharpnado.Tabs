@@ -59,7 +59,7 @@
                             Radius="20"
                             Offset="0,10" />
                     </Border.Shadow>
-                    <Label Text="Landscape Mode!"></Label>
+                    <Label Margin="0,50,0,0" Text="Landscape Mode!" BackgroundColor="Red" TextColor="Aqua"></Label>
                 </Border>
             </VerticalStackLayout>
             <VerticalStackLayout x:Name="PortraitStackLayout" Margin="0,120,0,95" Spacing="20">
@@ -70,7 +70,7 @@
                     Radius="20"
                     Offset="0,10" />
                     </Border.Shadow>
-                    <Label Text="Portrait Mode!"></Label>
+                    <Label Text="Portrait Mode!" BackgroundColor="Yellow" TextColor="Blue"></Label>
                 </Border>
             </VerticalStackLayout>
         </Grid>
