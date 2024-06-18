@@ -47,12 +47,10 @@
 
         </ResourceDictionary>
     </ContentView.Resources>
-
-    <ScrollView>
         <Grid>
-        <VerticalStackLayout x:Name="LandscapeStackLayout" Margin="0,120,0,95" Spacing="20">
+            <VerticalStackLayout x:Name="LandscapeStackLayout" Margin="0,120,0,95" Spacing="20">
 
-            <Border Style="{StaticResource Card}">
+                <Border Style="{StaticResource Card}">
                     <Border.Shadow>
                         <Shadow Brush="{StaticResource Gray950}"
                             Opacity="1"
@@ -74,5 +72,4 @@
                 </Border>
             </VerticalStackLayout>
         </Grid>
-    </ScrollView>
 </ContentView>
