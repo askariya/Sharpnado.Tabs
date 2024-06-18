@@ -1,4 +1,5 @@
-﻿using Sharpnado.Tabs;
+﻿using MauiSample.Presentation.CustomViews;
+using Sharpnado.Tabs;
 using Sharpnado.TaskLoaderView;
 
 namespace MauiSample.Presentation.Views;
@@ -8,10 +9,10 @@ public partial class TabA : ContentView
     public TabA()
     {
         InitializeComponent();
-        TabHostBadge.SelectedIndex = 0;
-        TabHostButton.SelectedIndex = 0;
+        //TabHostBadge.SelectedIndex = 0;
+        //TabHostButton.SelectedIndex = 0;
 
-        TabButton.TapCommand = new TaskLoaderCommand(TakeScreenshot);
+        //TabButton.TapCommand = new TaskLoaderCommand(TakeScreenshot);
 
     }
 
@@ -30,6 +31,6 @@ public partial class TabA : ContentView
                 Source = ImageSource.FromStream(() => stream),
             };
         
-        ScreenshotContainer.Content = image;
+        //ScreenshotContainer.Content = image;
     }
 }
