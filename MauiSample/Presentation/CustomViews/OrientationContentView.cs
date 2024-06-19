@@ -1,4 +1,5 @@
-﻿using Sharpnado.Tabs;
+﻿using Microsoft.Maui.Controls.Compatibility;
+using Sharpnado.Tabs;
 using Sharpnado.TaskLoaderView;
 
 namespace MauiSample.Presentation.CustomViews
@@ -46,7 +47,13 @@ namespace MauiSample.Presentation.CustomViews
         {
             if (LandscapeView != null)
             {
+                if (LandscapeView.Parent is Microsoft.Maui.Controls.Layout parentLayout)
+                {
+                        parentLayout.Children.Remove(LandscapeView);
+                }
+
                 Content = LandscapeView;
+                this.OnPropertyChanged(nameof(Content));
             }
             else
             {
@@ -59,7 +66,13 @@ namespace MauiSample.Presentation.CustomViews
         {
             if (PortraitView != null)
             {
+                if (PortraitView.Parent is Microsoft.Maui.Controls.Layout parentLayout)
+                {
+                    parentLayout.Children.Remove(PortraitView);
+                }
+
                 Content = PortraitView;
+                this.OnPropertyChanged(nameof(Content));
             }
             else
             {

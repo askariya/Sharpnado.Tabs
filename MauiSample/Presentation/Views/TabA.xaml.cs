@@ -1,6 +1,4 @@
 ﻿using MauiSample.Presentation.CustomViews;
-using Sharpnado.Tabs;
-using Sharpnado.TaskLoaderView;
 
 namespace MauiSample.Presentation.Views;
 
@@ -9,8 +7,8 @@ public partial class TabA : OrientationContentView
     public TabA()
     {
         InitializeComponent();
-        PortraitView = PortraitStackLayout;
-        LandscapeView = LandscapeStackLayout;
+        PortraitView = PortraitContentView;
+        LandscapeView = LandscapeContentView;
     }
 
     private async Task TakeScreenshot()

@@ -49,7 +49,8 @@
     </customViews:OrientationContentView.Resources>
 
         <Grid>
-            <VerticalStackLayout x:Name="LandscapeStackLayout" Margin="0,120,0,95" Spacing="20">
+        <ContentView x:Name="LandscapeContentView">
+            <VerticalStackLayout Margin="0,120,0,95" Spacing="20">
 
                 <Border Style="{StaticResource Card}">
                     <Border.Shadow>
@@ -61,7 +62,9 @@
                     <Label Margin="0,50,0,0" Text="Landscape Mode!" BackgroundColor="Red" TextColor="Aqua"></Label>
                 </Border>
             </VerticalStackLayout>
-            <VerticalStackLayout x:Name="PortraitStackLayout" Margin="0,120,0,95" Spacing="20">
+        </ContentView>
+        <ContentView x:Name="PortraitContentView">
+            <VerticalStackLayout Margin="0,120,0,95" Spacing="20">
                 <Border Style="{StaticResource Card}">
                     <Border.Shadow>
                         <Shadow Brush="{StaticResource Gray950}"
@@ -72,5 +75,6 @@
                     <Label Text="Portrait Mode!" BackgroundColor="Yellow" TextColor="Blue"></Label>
                 </Border>
             </VerticalStackLayout>
-        </Grid>
+        </ContentView>
+    </Grid>
 </customViews:OrientationContentView>
